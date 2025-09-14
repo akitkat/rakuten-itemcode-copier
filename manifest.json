@@ -22,7 +22,6 @@
     }
   ],
   "action": {
-    "default_popup": "src/popup.html",
     "default_title": "楽天商品コードコピー"
   },
   "icons": {
