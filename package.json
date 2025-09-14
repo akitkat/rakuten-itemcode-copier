@@ -1,0 +1,21 @@
+{
+  "name": "rakuten-itemcode-copier",
+  "version": "1.0.0",
+  "description": "楽天市場の検索結果ページで商品のitemCodeを簡単にコピーできるChrome拡張機能",
+  "main": "src/content-script.js",
+  "scripts": {
+    "build": "echo 'Chrome拡張機能のビルドスクリプト'",
+    "dev": "echo '開発モード'",
+    "package": "zip -r rakuten-itemcode-copier.zip . -x '*.git*' 'node_modules/*' '*.zip'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "rakuten",
+    "itemcode",
+    "copy"
+  ],
+  "author": "n.akimoto",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

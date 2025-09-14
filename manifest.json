@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "楽天商品コードコピー",
+  "version": "1.0.0",
+  "description": "楽天市場の検索結果ページで商品のitemCodeを簡単にコピーできるChrome拡張機能",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://search.rakuten.co.jp/*",
+    "https://item.rakuten.co.jp/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://search.rakuten.co.jp/*",
+        "https://item.rakuten.co.jp/*"
+      ],
+      "js": ["src/content-script.js"],
+      "css": ["src/styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "楽天商品コードコピー"
+  },
+  "icons": {
+    "16": "icons/icon16.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  }
+}

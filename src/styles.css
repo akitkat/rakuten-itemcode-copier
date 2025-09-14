@@ -1,0 +1,72 @@
+/* 楽天商品コードコピーボタンのスタイル */
+
+.rakuten-copy-button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rakuten-copy-button:hover {
+  background-color: #e55a00;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rakuten-copy-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rakuten-copy-button:focus {
+  outline: 2px solid #ff6600;
+  outline-offset: 2px;
+}
+
+/* 成功状態 */
+.rakuten-copy-button.success {
+  background-color: #4CAF50;
+}
+
+.rakuten-copy-button.success:hover {
+  background-color: #45a049;
+}
+
+/* エラー状態 */
+.rakuten-copy-button.error {
+  background-color: #f44336;
+}
+
+.rakuten-copy-button.error:hover {
+  background-color: #da190b;
+}
+
+/* 楽天の商品要素内での配置調整 */
+.searchresultitem {
+  position: relative;
+}
+
+/* ボタンを商品情報の下に配置 */
+.searchresultitem .rakuten-copy-button {
+  display: block;
+  width: fit-content;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .rakuten-copy-button {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
